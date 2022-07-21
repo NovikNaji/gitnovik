@@ -1,24 +1,20 @@
-import numpy as np
-import array as arr 
 
-a=list(input().lower())
-n=len(a)
+inputText=list(input().lower())
+
+lenText=len(inputText)
 k=0
-b=''
+outputText=''
 
 
-
-
-
-for i in range(n):
+for i in range(lenText):
     k=0
-    for j in range(n):
-        if(a[i]==a[j]):
+    for j in range(lenText):
+        if(inputText[i]==inputText[j]):
             k+=1
     if(k==1):
-        b+='('
+        outputText+='('
     else:
-        b+=')'
-print(n)
-print(b)
-print(a)
+        outputText+=')'
+
+print(outputText)
+print(inputText)
